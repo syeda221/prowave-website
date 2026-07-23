@@ -15,17 +15,16 @@ import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
 
 const industries = [
-  { icon: HeartPulse, label: 'Healthcare' },
-  { icon: GraduationCap, label: 'Education' },
+  { icon: ShoppingCart, label: 'E-commerce & Retail' },
+  { icon: HeartPulse, label: 'Healthcare & Medical' },
+  { icon: Factory, label: 'Manufacturing & Textile' },
+  { icon: Truck, label: 'Logistics & Transport' },
   { icon: Building2, label: 'Real Estate' },
-  { icon: ShoppingCart, label: 'E-commerce' },
-  { icon: Truck, label: 'Logistics' },
-  { icon: Landmark, label: 'Finance' },
-  { icon: Factory, label: 'Manufacturing' },
+  { icon: GraduationCap, label: 'Education' },
+  { icon: UtensilsCrossed, label: 'Food & Restaurants' },
+  { icon: Store, label: 'Wholesale & Trading' },
   { icon: HardHat, label: 'Construction' },
-  { icon: UtensilsCrossed, label: 'Restaurant' },
-  { icon: Store, label: 'Retail' },
-  { icon: ShieldHalf, label: 'Government' },
+  { icon: Landmark, label: 'Corporate Sectors' },
 ]
 
 export function Industries() {

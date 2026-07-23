@@ -7,7 +7,7 @@ import { Reveal } from '@/components/reveal'
 
 const contactMethods = [
   { icon: MessageCircle, label: 'WhatsApp', value: '+1 (555) 019-2837' },
-  { icon: Mail, label: 'Email', value: 'hello@nexoraq.com' },
+  { icon: Mail, label: 'Email', value: 'hello@prowavetech.com' },
   { icon: Phone, label: 'Phone', value: '+1 (555) 782-1120' },
   { icon: MapPin, label: 'Office', value: '221 Innovation Ave, Suite 900' },
 ]
@@ -37,7 +37,7 @@ export function Contact() {
             <div className="flex h-full flex-col gap-4">
               <div className="glass overflow-hidden rounded-3xl">
                 <iframe
-                  title="Nexoraq office location"
+                  title="Pro Wave Technologies office location"
                   src="https://www.openstreetmap.org/export/embed.html?bbox=-74.02%2C40.70%2C-73.96%2C40.75&layer=mapnik"
                   className="h-56 w-full grayscale invert-[0.9]"
                   loading="lazy"

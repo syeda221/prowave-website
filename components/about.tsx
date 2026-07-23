@@ -7,17 +7,17 @@ const pillars = [
   {
     icon: Target,
     title: 'Our Mission',
-    text: 'Empower businesses of every size with reliable, scalable software that turns ambitious ideas into measurable results.',
+    text: 'To empower businesses with custom software and comprehensive ERP solutions that automate workflows and drive sustainable growth.',
   },
   {
     icon: Eye,
     title: 'Our Vision',
-    text: 'To be the most trusted engineering partner for companies building the next generation of digital products.',
+    text: 'To be the most trusted technology partner, turning complex business ideas into powerful, seamless digital solutions.',
   },
   {
     icon: Gem,
     title: 'Core Values',
-    text: 'Craftsmanship, transparency, and long-term partnership guide every line of code and every conversation.',
+    text: 'Innovation, transparency, and a relentless focus on client success guide every project we deliver.',
   },
 ]
 
@@ -30,15 +30,15 @@ export function About() {
           <div className="relative overflow-hidden rounded-3xl border border-border">
             <Image
               src="/about-team.png"
-              alt="Nexoraq software engineering team collaborating"
+              alt="Pro Wave Technologies software engineering team"
               width={720}
               height={540}
               className="h-full w-full object-cover"
             />
           </div>
           <div className="glass absolute -bottom-6 -right-2 rounded-2xl px-6 py-4 sm:-right-6">
-            <div className="font-heading text-3xl font-extrabold text-gradient">8+</div>
-            <div className="text-sm text-muted-foreground">Years of engineering</div>
+            <div className="font-heading text-3xl font-extrabold text-primary">100+</div>
+            <div className="text-sm text-muted-foreground">Projects Delivered</div>
           </div>
         </Reveal>
 
@@ -46,20 +46,18 @@ export function About() {
           <div className="flex flex-col gap-4">
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                Who We Are
+                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                About Pro Wave
               </span>
             </Reveal>
             <Reveal delay={100}>
               <h2 className="text-balance font-heading text-3xl font-extrabold leading-tight tracking-tight text-foreground md:text-4xl">
-                A premium software house built for enterprise-grade quality
+                Smart Solutions. <span className="text-primary">Stronger Business.</span>
               </h2>
             </Reveal>
             <Reveal delay={150}>
               <p className="text-pretty leading-relaxed text-muted-foreground md:text-lg">
-                Since 2016, Nexoraq has partnered with startups, SMEs, and enterprises across 15+
-                countries to design, build, and scale software that people love to use. Our
-                cross-functional teams blend product thinking with deep engineering expertise.
+                Pro Wave Technologies is a full-service software house dedicated to turning your ideas into powerful digital solutions. From complete custom ERP systems to high-performance web and mobile applications, we provide end-to-end engineering to scale your business.
               </p>
             </Reveal>
           </div>

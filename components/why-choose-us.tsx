@@ -1,44 +1,32 @@
 import {
-  Users,
-  Cpu,
-  GitBranch,
-  BadgeDollarSign,
-  Headphones,
+  Target,
   ShieldCheck,
+  Lightbulb,
+  Clock,
 } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
 
 const reasons = [
   {
-    icon: Users,
-    title: 'Experienced Team',
-    text: 'Senior engineers, designers, and product managers with a track record across industries.',
-  },
-  {
-    icon: Cpu,
-    title: 'Modern Technologies',
-    text: 'We build on today\u2019s most reliable, future-proof stacks — never legacy shortcuts.',
-  },
-  {
-    icon: GitBranch,
-    title: 'Agile Development',
-    text: 'Iterative delivery with weekly demos so you always see progress and stay in control.',
-  },
-  {
-    icon: BadgeDollarSign,
-    title: 'Transparent Pricing',
-    text: 'Clear scopes and honest estimates. No hidden fees, no surprises on your invoice.',
-  },
-  {
-    icon: Headphones,
-    title: 'Dedicated Support',
-    text: 'A dedicated team and responsive support channels for the entire product lifecycle.',
+    icon: Target,
+    title: 'Client Focused',
+    text: 'We focus entirely on your success, building solutions that perfectly match your business needs.',
   },
   {
     icon: ShieldCheck,
-    title: 'Secure Solutions',
-    text: 'Security-first architecture with best practices baked into every layer we ship.',
+    title: 'Quality Assured',
+    text: 'High quality, bug-free solutions you can trust, backed by rigorous QA and testing.',
+  },
+  {
+    icon: Lightbulb,
+    title: 'Innovative Approach',
+    text: 'We use the latest technologies and smart strategies to build future-proof digital solutions.',
+  },
+  {
+    icon: Clock,
+    title: 'On Time Delivery',
+    text: 'Strictly committed to deadlines, ensuring your project launches reliably and on schedule.',
   },
 ]
 
@@ -46,14 +34,14 @@ export function WhyChooseUs() {
   return (
     <section className="relative py-24 lg:py-32">
       <div className="absolute inset-0 grid-bg opacity-40 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why Choose Us"
           title="Built to be the partner you can rely on"
-          description="We combine the reliability of an enterprise vendor with the speed and care of a boutique studio."
+          description="We combine enterprise-grade reliability with innovative approaches to deliver your project on time, every time."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {reasons.map((r, i) => (
             <Reveal key={r.title} delay={i * 80}>
               <div className="glass group h-full rounded-3xl p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/50 hover:glow-blue">

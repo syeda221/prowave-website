@@ -11,7 +11,7 @@ const testimonials = [
     country: 'United Kingdom',
     initials: 'SW',
     rating: 5,
-    text: 'Nexoraq delivered our mobile banking app ahead of schedule and the quality was outstanding. Their team felt like a genuine extension of ours from day one.',
+    text: 'Pro Wave Technologies delivered our mobile banking app ahead of schedule and the quality was outstanding. Their team felt like a genuine extension of ours from day one.',
   },
   {
     name: 'Daniel Krause',
@@ -27,7 +27,7 @@ const testimonials = [
     country: 'UAE',
     initials: 'AH',
     rating: 5,
-    text: 'They rebuilt our storefront and conversions jumped 40%. Nexoraq truly understands both design and business outcomes. Highly recommended.',
+    text: 'They rebuilt our storefront and conversions jumped 40%. Pro Wave Technologies truly understands both design and business outcomes. Highly recommended.',
   },
   {
     name: 'Michael Reyes',

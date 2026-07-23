@@ -34,7 +34,7 @@ export function Footer() {
                 <Hexagon className="h-5 w-5 text-primary-foreground" fill="currentColor" />
               </span>
               <span className="font-heading text-xl font-extrabold tracking-tight text-foreground">
-                Nexoraq
+                Pro Wave Technologies
               </span>
             </Link>
             <p className="max-w-sm leading-relaxed text-muted-foreground">
@@ -83,7 +83,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-border py-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Nexoraq. All rights reserved.
+            &copy; {new Date().getFullYear()} Pro Wave Technologies. All rights reserved.
           </p>
           <div className="flex gap-3">
             {socials.map((s) => (
