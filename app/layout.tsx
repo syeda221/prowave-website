@@ -51,8 +51,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth bg-background`}
+      suppressHydrationWarning
     >
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

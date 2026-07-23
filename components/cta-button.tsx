@@ -3,13 +3,13 @@ import type { ComponentProps, ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-xs font-semibold uppercase tracking-widest transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background'
+  'inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background'
 
 const variants = {
   primary:
-    'bg-gradient-to-r from-accent to-primary text-primary-foreground shadow-[0_0_30px_-6px_rgba(45,140,255,0.6)] hover:shadow-[0_0_45px_-4px_rgba(139,207,38,0.6)] hover:-translate-y-0.5',
+    'bg-primary text-primary-foreground shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-primary/90 hover:-translate-y-0.5',
   secondary:
-    'glass border-primary/40 text-foreground hover:border-primary hover:bg-primary/10 hover:-translate-y-0.5',
+    'bg-white/5 border border-white/10 text-foreground shadow-sm hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5',
 }
 
 type Variant = keyof typeof variants

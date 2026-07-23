@@ -15,29 +15,35 @@ import { Faq } from '@/components/faq'
 import { Contact } from '@/components/contact'
 import { CtaBanner } from '@/components/cta-banner'
 import { Footer } from '@/components/footer'
+import { NextSectionWrapper } from '@/components/next-section-wrapper'
 
 export default function Page() {
   return (
-    <div className="min-h-screen scroll-smooth bg-background">
+    <div className="min-h-screen scroll-smooth bg-[#071426]">
       <Navbar />
       <main>
+        {/* The Hero is now pinned outside the normal document flow by GSAP */}
         <Hero />
-        <TrustedBy />
-        <About />
-        <WhyChooseUs />
-        <Services />
-        <Process />
-        <Technologies />
-        <Portfolio />
-        <Industries />
-        <Stats />
-        <Testimonials />
-        <Pricing />
-        <Faq />
-        <Contact />
-        <CtaBanner />
+        
+        {/* The rest of the page sits inside the Wrapper which natively scrolls up over the Hero */}
+        <NextSectionWrapper>
+          <TrustedBy />
+          <About />
+          <WhyChooseUs />
+          <Services />
+          <Process />
+          <Technologies />
+          <Portfolio />
+          <Industries />
+          <Stats />
+          <Testimonials />
+          <Pricing />
+          <Faq />
+          <Contact />
+          <CtaBanner />
+          <Footer />
+        </NextSectionWrapper>
       </main>
-      <Footer />
     </div>
   )
 }
