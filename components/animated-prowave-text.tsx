@@ -12,36 +12,36 @@ interface AnimatedProwaveTextProps {
 
 const contentBlocks = [
   { // Default
-    title: <>Engineering Digital Products That Drive <span className="text-primary">Business Growth</span></>,
-    desc: "We build enterprise software, scalable web applications, mobile apps, cloud platforms, and digital solutions that help businesses innovate and grow."
+    title: <>Custom Software & <span className="text-primary">ERP Solutions</span></>,
+    desc: "We build tailored enterprise software, scalable web applications, and complete ERP systems to automate operations and drive your business growth."
   },
   { // P
-    title: <>Premier <span className="text-primary">Engineering</span></>,
-    desc: "Building top-tier digital products with precision, scale, and uncompromising code quality."
+    title: <>Powerful <span className="text-primary">ERP Systems</span></>,
+    desc: "End-to-end business management solutions including inventory, HR, accounting, and supply chain tailored to your unique requirements."
   },
   { // R
-    title: <>Robust <span className="text-primary">Architecture</span></>,
-    desc: "Designing secure, high-performance systems and resilient infrastructure for modern businesses."
+    title: <>Redevelop & <span className="text-primary">Modernize</span></>,
+    desc: "Transform your existing legacy software systems into scalable, secure, and user-friendly applications built for the future."
   },
   { // O
-    title: <>Optimized <span className="text-primary">Cloud Solutions</span></>,
-    desc: "Seamless cloud integrations, deployments, and migrations that drive operational efficiency."
+    title: <>Optimized <span className="text-primary">Business Workflows</span></>,
+    desc: "Streamline operations with custom software that automates complex processes, improves efficiency, and drives digital transformation."
   },
   { // W
     title: <>Web & <span className="text-primary">Mobile Apps</span></>,
-    desc: "Creating flawless, lightning-fast user experiences across all devices and platforms worldwide."
+    desc: "Developing high-performance custom web applications, e-commerce platforms, and cross-platform Flutter mobile apps for iOS and Android."
   },
   { // A
-    title: <>Advanced <span className="text-primary">AI Automation</span></>,
-    desc: "Leveraging artificial intelligence to automate complex workflows and innovate significantly faster."
+    title: <>API & <span className="text-primary">System Integrations</span></>,
+    desc: "Seamlessly connecting third-party services and optimizing databases to create unified, highly efficient software ecosystems."
   },
   { // V
-    title: <>Visionary <span className="text-primary">Design</span></>,
-    desc: "Crafting premium user interfaces and experiences that build deep trust and user engagement."
+    title: <>Visionary <span className="text-primary">UI/UX Design</span></>,
+    desc: "Crafting intuitive user interfaces and seamless digital experiences that enhance user engagement and improve overall software usability."
   },
   { // E
-    title: <>Enterprise <span className="text-primary">Excellence</span></>,
-    desc: "Delivering complete end-to-end software solutions tailored exclusively for growing enterprises."
+    title: <>End-to-End <span className="text-primary">Support</span></>,
+    desc: "Providing full-time technical support, long-term maintenance, and continuous feature enhancements to ensure reliable, secure performance."
   }
 ]
 
@@ -147,7 +147,7 @@ export function AnimatedProwaveText({ heroRef }: AnimatedProwaveTextProps) {
       </div>
 
       {/* Dynamic Content Blocks */}
-      <div className="relative w-full h-[320px] sm:h-[240px] lg:h-[220px] flex justify-center mt-2 sm:mt-6">
+      <div className="relative w-full h-[240px] sm:h-[180px] lg:h-[160px] flex justify-center mt-2 sm:mt-4">
         {contentBlocks.map((block, i) => (
           <div 
             key={i} 
