@@ -12,32 +12,14 @@ import { CtaButton } from './cta-button'
 export function Hero() {
   const { scrollY } = useScroll()
   const heroRef = useRef<HTMLElement>(null)
-  
-  // Minimal scroll effects for static hero elements (like stats)
-  const parallaxY = useTransform(scrollY, [0, 600], [0, 40])
 
   return (
-    <section ref={heroRef} id="home" className="sticky top-0 min-h-screen flex flex-col items-center justify-center pt-36 pb-24 z-10">
+    <section ref={heroRef} id="home" className="sticky top-0 min-h-screen flex flex-col items-center justify-center pt-32 pb-32 z-10">
       <AnimatedBackground />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1000px] flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Logo */}
-        <motion.div 
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-8"
-        >
-          <Image
-            src="/icon.svg"
-            alt="Prowave Logo"
-            width={48}
-            height={48}
-            className="opacity-90"
-            priority
-          />
-        </motion.div>
+
 
         {/* Dynamic Prowave Text & Content */}
         <motion.div
@@ -49,13 +31,11 @@ export function Hero() {
           <AnimatedProwaveText heroRef={heroRef} />
         </motion.div>
 
-        {/* CTA Buttons */}
         <motion.div 
-          style={{ y: parallaxY }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center gap-5 mb-20 mt-4 relative z-20 pointer-events-auto"
+          className="flex flex-col sm:flex-row items-center gap-5 mb-6 mt-4 relative z-20 pointer-events-auto"
         >
           <CtaButton href="#contact" variant="primary">
             Get Free Consultation

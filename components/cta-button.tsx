@@ -7,9 +7,9 @@ const base =
 
 const variants = {
   primary:
-    'bg-primary text-primary-foreground shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-primary/90 hover:-translate-y-0.5',
+    'bg-primary text-primary-foreground shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-primary/90',
   secondary:
-    'bg-white/5 border border-white/10 text-foreground shadow-sm hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5',
+    'bg-white/5 border border-white/10 text-foreground shadow-sm hover:bg-white/10 hover:border-white/20',
 }
 
 type Variant = keyof typeof variants

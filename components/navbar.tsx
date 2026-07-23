@@ -38,7 +38,6 @@ export function Navbar() {
         )}
       >
         <Link href="#home" className="flex items-center gap-3 z-10" onClick={() => setOpen(false)}>
-          <Image src="/icon.svg" alt="Logo" width={32} height={32} />
           <span className="font-heading text-xl font-extrabold tracking-tight text-white">
             PROWAVE
           </span>

@@ -11,7 +11,7 @@ const stats = [
 
 export function AnimatedStats() {
   return (
-    <div className="flex flex-wrap justify-center gap-12 sm:gap-16 pt-12 border-t border-border/40 max-w-4xl mx-auto w-full">
+    <div className="flex flex-wrap justify-center gap-12 sm:gap-16 pt-6 border-t border-border/40 max-w-4xl mx-auto w-full">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.label}
@@ -19,12 +19,12 @@ export function AnimatedStats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.1 + 2 }}
-          className="flex flex-col items-center gap-2"
+          className="flex flex-col items-center gap-1.5"
         >
-          <div className="font-heading text-4xl font-extrabold text-foreground drop-shadow-md">
+          <div className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground drop-shadow-md">
             {stat.value}
           </div>
-          <div className="text-sm sm:text-base font-medium text-muted-foreground uppercase tracking-wider">
+          <div className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">
             {stat.label}
           </div>
         </motion.div>

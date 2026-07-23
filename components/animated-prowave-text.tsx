@@ -147,7 +147,7 @@ export function AnimatedProwaveText({ heroRef }: AnimatedProwaveTextProps) {
       </div>
 
       {/* Dynamic Content Blocks */}
-      <div className="relative w-full h-[240px] sm:h-[180px] lg:h-[160px] flex justify-center mt-2 sm:mt-4">
+      <div className="relative w-full h-[200px] sm:h-[140px] lg:h-[120px] flex justify-center mt-2 sm:mt-4">
         {contentBlocks.map((block, i) => (
           <div 
             key={i} 
@@ -157,12 +157,19 @@ export function AnimatedProwaveText({ heroRef }: AnimatedProwaveTextProps) {
             className="absolute inset-0 flex flex-col items-center pointer-events-none"
             style={{ opacity: i === 0 ? 1 : 0 }}
           >
-            <h1 className="max-w-[800px] text-balance font-heading text-[28px] sm:text-[36px] lg:text-[42px] font-semibold leading-[1.2] tracking-tight text-white mb-4">
-              {block.title}
-            </h1>
-            <p className="max-w-[600px] text-pretty text-[16px] sm:text-[18px] leading-[1.6] text-muted-foreground">
-              {block.desc}
-            </p>
+            <div
+              className="text-balance text-center"
+              style={{
+                textShadow: '0 4px 20px rgba(0,0,0,0.5)',
+              }}
+            >
+              <h2 className="mb-3 sm:mb-4 font-heading text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-[28px]">
+                {block.title}
+              </h2>
+              <p className="mx-auto max-w-[700px] text-sm leading-relaxed text-gray-300 sm:text-base px-4">
+                {block.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>
