@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
-import { TrustedBy } from '@/components/trusted-by'
 import { About } from '@/components/about'
 import { WhyChooseUs } from '@/components/why-choose-us'
 import { Services } from '@/components/services'
@@ -27,7 +26,6 @@ export default function Page() {
         
         {/* The rest of the page sits inside the Wrapper which natively scrolls up over the Hero */}
         <NextSectionWrapper>
-          <TrustedBy />
           <About />
           <WhyChooseUs />
           <Services />
